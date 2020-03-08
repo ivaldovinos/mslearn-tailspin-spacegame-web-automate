@@ -4,11 +4,16 @@ terraform {
     azurerm = "~> 1.44"
   }
   backend "azurerm" {
+      version = "~> 1.44"
+    resource_group_name  = "tf-storage-rg"
+    storage_account_name = "tfsa23572"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
   }
 }
 
 variable "resource_group_name" {
-  default = "tailspin-space-game-rg"
+  default = "tf-storage-rg"
   description = "The name of the resource group"
 }
 
