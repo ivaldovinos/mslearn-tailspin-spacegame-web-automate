@@ -14,7 +14,7 @@
         "adminPassword": {
             "reference": {
               "keyVault": {
-                "id": "https://tailspin-vault-31589.vault.azure.net/secrets/adminPassword/11705e08fee94570af7c10e83bf02a56"
+                "id": "/subscriptions/15a17812-5c21-4c8d-9b46-93d6cd001652/resourceGroups/tailspin-spacegame-web-rg/providers/Microsoft.KeyVault/vaults/tailspin-vault-31589"
               },
               "secretName": "adminPassword"
             }
@@ -22,7 +22,7 @@
         "firstRun": {
             "reference": {
                 "keyVault": {
-                    "id": "https://tailspin-vault-31589.vault.azure.net/secrets/firstRun/db6eaef6a1a54f1eb6d139eeaf4ff133"
+                    "id": "/subscriptions/15a17812-5c21-4c8d-9b46-93d6cd001652/resourceGroups/tailspin-spacegame-web-rg/providers/Microsoft.KeyVault/vaults/tailspin-vault-31589"
                 },
                 "secretName": "firstRun"
             }
