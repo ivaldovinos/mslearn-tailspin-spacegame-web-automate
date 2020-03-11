@@ -1,0 +1,31 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "deployPrefix": {
+            "value": "-dev-"
+        },
+        "keyVaultName": {
+          "value": "tailspin-vault-31589"
+        },
+        "uniqueSuffix": {
+            "value": "12345"
+        },
+        "adminPassword": {
+            "reference": {
+              "keyVault": {
+                "id": "https://tailspin-vault-31589.vault.azure.net/secrets/adminPassword/11705e08fee94570af7c10e83bf02a56"
+              },
+              "secretName": "adminPassword"
+            }
+        },
+        "firstRun": {
+            "reference": {
+                "keyVault": {
+                    "id": "https://tailspin-vault-31589.vault.azure.net/secrets/firstRun/db6eaef6a1a54f1eb6d139eeaf4ff133"
+                },
+                "secretName": "firstRun"
+            }
+        }
+    }
+}
